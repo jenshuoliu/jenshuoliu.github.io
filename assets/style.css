@@ -74,9 +74,10 @@ a:hover { text-decoration: underline; }
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--text);
+  white-space: nowrap;
 }
 .site-title:hover { text-decoration: none; }
-.site-nav { display: flex; gap: 22px; font-size: 0.95rem; }
+.site-nav { display: flex; gap: 22px; font-size: 0.95rem; white-space: nowrap; }
 .site-nav a { color: var(--muted); }
 .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent); text-decoration: none; }
 .site-nav a[aria-current="page"] { font-weight: 600; }
@@ -243,6 +244,7 @@ p { margin: 0 0 14px; }
   .contact-list { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 12px; }
 }
 @media (max-width: 560px) {
+  .site-header .inner { gap: 12px; }
   .site-nav { gap: 14px; font-size: 0.9rem; }
   .site-title { font-size: 1.05rem; }
   .pub { grid-template-columns: minmax(0, 1fr); gap: 4px; }
@@ -251,4 +253,8 @@ p { margin: 0 0 14px; }
   .entry .when { text-align: left; }
   .award-list li { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .profile { grid-template-columns: 88px minmax(0, 1fr); }
+}
+@media (max-width: 400px) {
+  .site-nav { gap: 10px; font-size: 0.85rem; }
+  .site-title { font-size: 0.98rem; }
 }
