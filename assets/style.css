@@ -110,6 +110,15 @@ a:hover { text-decoration: underline; }
   margin: 20px 0 6px;
 }
 .profile .role { margin: 0; color: var(--text); font-weight: 500; }
+.profile .highlight {
+  margin: 6px 0 6px;
+  padding-left: 10px;
+  border-left: 3px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
 .profile .affil { margin: 0 0 18px; color: var(--muted); font-size: 0.95rem; }
 .contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .contact-list a {
